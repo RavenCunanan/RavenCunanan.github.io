@@ -16,7 +16,7 @@ function bigger() {
     document.getElementById("textarea").style.fontWeight = "normal";
     document.getElementById("textarea").style.color = "black";
     document.getElementById("textarea").style.textDecoration = "none";
-    document.getElementById("fancy_textarea").style.fontSize = "12pt";
+    document.getElementById("textarea").style.fontSize = "12pt";
   }
 
   function moo(){
