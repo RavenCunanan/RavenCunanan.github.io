@@ -1,0 +1,60 @@
+<!DOCTYPE>
+<!-- Raven Cunanan Fall 2022 -->
+<html>
+  <head>
+    <title>Encrypt-It!</title>
+    <script type = "text/javascript" src="encrypt-it.js"></script>
+    <link rel="stylesheet" href="styleencrypt.css">
+  </head>
+  <body>
+    <header>
+      <h1>Encrypt-It! by Raven Cunanan</h1>
+      <h2>Translate any text message into a super-secret cipher!</h2>
+    </header>
+    <main>
+      <fieldset>
+        <legend>Text to Encrypt</legend>
+        <textarea id="input-text" rows="10" cols="60" 
+         placeholder="Enter your message to encrypted here"></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Encrypt Options</legend>
+
+        <p>
+          <strong>Cipher Type: </strong>
+          <select id="cipher-type">
+            <option value="shift">Shift Cipher</option>
+            <option value="random">Randomized</option>
+          </select>
+        </p>
+
+        <p>
+          <strong>Font Size: </strong>
+          <label>
+            <input checked type="radio" name="text-size" value="12pt" onchange="twelve()">12pt</input>
+          </label>
+          <label>
+            <input type="radio" name="text-size" value="24pt" onchange="twenty4()">24pt</input>
+          </label>
+        </p>
+        
+        <p>
+          <label>
+            <strong>All-Caps:</strong>
+            <input id="all-caps" type="checkbox" name="uppercase-ouput" value="uppercase"/>
+          </label>
+        </p>
+
+        <button onclick="encrypt()" type="button"> Encrypt It!</button>
+        <button onclick="reset()" type="button">Reset</button>
+      </fieldset>
+
+      <fieldset>
+        <h2>Result:</h2>
+        <textarea id="result-text" rows="10" cols="60" 
+         placeholder="Result will be displayed here." readonly></textarea>
+      </fieldset>
+
+    </main>
+  </body>
+</html>
