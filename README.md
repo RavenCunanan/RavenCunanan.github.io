@@ -1,3 +1,4 @@
 # RavenCunanan.github.io
-CSC 196W
-Links to Assignment 4 have been added
+CSC 196W FALL 2022
+For Sac State
+
